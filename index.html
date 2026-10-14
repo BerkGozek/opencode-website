@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fullmetal Alchemist: Alchemy Basics</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Fullmetal Alchemist: Alchemy Basics</h1>
+      <p>
+        New to <em>Fullmetal Alchemist</em>? Alchemy is the science of changing
+        matter, and it follows strict rules. Learn them here, then see how the
+        story uses them.
+      </p>
+    </header>
+
+    <main id="main">
+      <section aria-labelledby="rules-heading">
+        <h2 id="rules-heading">The Rules of Alchemy</h2>
+        <ol>
+          <li>
+            <strong>Equivalent exchange.</strong> To gain something, you must
+            give up something of equal value. Nothing is created from nothing.
+          </li>
+          <li>
+            <strong>Transmutation circles.</strong> Most alchemists draw a
+            circle to define what the transformation will do.
+          </li>
+          <li>
+            <strong>Knowledge is power, and a cost.</strong> Skilled alchemists
+            can transform matter quickly, but mistakes and forbidden acts carry
+            a heavy price.
+          </li>
+        </ol>
+      </section>
+
+      <section aria-labelledby="examples-heading">
+        <h2 id="examples-heading">Alchemy in Action</h2>
+
+        <div class="filters" role="group" aria-label="Filter cards by type">
+          <button type="button" class="filter-button" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" class="filter-button" data-filter="technique" aria-pressed="false">Techniques</button>
+          <button type="button" class="filter-button" data-filter="tool" aria-pressed="false">Tools</button>
+          <button type="button" class="filter-button" data-filter="forbidden" aria-pressed="false">Forbidden</button>
+        </div>
+
+        <p id="filter-status" class="filter-status" aria-live="polite"></p>
+
+        <ul class="card-grid" id="card-grid">
+          <li class="card" data-category="technique">
+            <h3>Transmutation circle</h3>
+            <p>A drawn pattern that tells the alchemist what the change should do.</p>
+            <span class="tag">Technique</span>
+          </li>
+          <li class="card" data-category="technique">
+            <h3>Hand-clap transmutation</h3>
+            <p>Some alchemists clap their hands together to transform matter without drawing a circle.</p>
+            <span class="tag">Technique</span>
+          </li>
+          <li class="card" data-category="tool">
+            <h3>Automail</h3>
+            <p>Mechanical limbs that replace lost arms and legs, built with the help of skilled mechanics.</p>
+            <span class="tag">Tool</span>
+          </li>
+          <li class="card" data-category="tool">
+            <h3>State Alchemist watch</h3>
+            <p>A silver pocket watch that marks an alchemist as licensed by the military.</p>
+            <span class="tag">Tool</span>
+          </li>
+          <li class="card" data-category="forbidden">
+            <h3>Human transmutation</h3>
+            <p>Changing a human body is forbidden. Trying it always costs something, and it is the story's central mistake.</p>
+            <span class="tag">Forbidden</span>
+          </li>
+          <li class="card" data-category="forbidden">
+            <h3>Philosopher's Stone</h3>
+            <p>A legendary object that can break the rules of equivalent exchange, and its creation is forbidden.</p>
+            <span class="tag">Forbidden</span>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        A fan-made page. <em>Fullmetal Alchemist</em> belongs to its creators and
+        publishers. This site is not affiliated with them.
+      </p>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
